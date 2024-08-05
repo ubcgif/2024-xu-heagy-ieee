@@ -1,0 +1,19 @@
+name: Create Preview Draft from PR
+on:
+  pull_request:
+    branches: ['main']
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  draft:
+    uses: curvenote/actions/.github/workflows/draft.yml@v1
+    with:
+      id-pattern-regex: '^ubcgif-(?:[a-zA-Z0-9-_]{3,40})$'
+      venue: appliedgeophysics
+      collection: publications
+      kind: article
+      path: paper
+    secrets:
+      CURVENOTE: ${{ secrets.CURVENOTE_TOKEN }}
+      GITHUB: ${{ secrets.GITHUB_TOKEN }}

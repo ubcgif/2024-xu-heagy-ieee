@@ -1,0 +1,18 @@
+name: Create Submission from Main
+on:
+  push:
+    branches: ['main']
+permissions:
+  contents: write
+jobs:
+  submit:
+    uses: curvenote/actions/.github/workflows/submit.yml@v1
+    with:
+      id-pattern-regex: '^ubcgif-(?:[a-zA-Z0-9-_]{3,40})$'
+      venue: appliedgeophysics
+      collection: publications
+      kind: article
+      path: paper
+    secrets:
+      CURVENOTE: ${{ secrets.CURVENOTE_TOKEN }}
+      GITHUB: ${{ secrets.GITHUB_TOKEN }}
