@@ -54,5 +54,5 @@ site:
   template: article-theme
   actions:
     - title: pdf
-      url: xu_heagy_2024.pdf.pdf
+      url: xu_heagy_2024.pdf
       static: true
