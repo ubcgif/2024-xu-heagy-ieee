@@ -1,0 +1,4 @@
+format: jb-book
+root: IEEE_CNNPI.tex
+chapters:
+  - file: Appendix.tex
