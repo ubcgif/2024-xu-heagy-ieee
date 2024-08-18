@@ -13,7 +13,6 @@ Regularization is critical for solving ill-posed geophysical inverse problems. E
 ## Citation
 
 A. Xu and L. J. Heagy, "A Test-Time Learning Approach to Reparameterize the Geophysical Inverse Problem With a Convolutional Neural Network," in IEEE Transactions on Geoscience and Remote Sensing, vol. 62, pp. 1-12, 2024, Art no. 5919912, doi: 10.1109/TGRS.2024.3424659.
-keywords: {Inverse problems;Conductivity;Convolutional neural networks;Training;Neural networks;Mathematical models;Geology;Convolutional neural network (CNN);deep image prior (DIP);deep learning (DL);direct-current resistivity (DCR) inversion;parameterized inversion (PI)},
 
 ```
 
